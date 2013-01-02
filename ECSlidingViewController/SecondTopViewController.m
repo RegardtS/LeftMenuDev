@@ -32,7 +32,14 @@
     self.slidingViewController.anchorRightRevealAmount =200.0f;
     
     [self.view addGestureRecognizer:self.slidingViewController.panGesture];
+}
 
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+	// Do any additional setup after loading the view, typically from a nib.
+ 
     id path = @"http://s4.haivl.com/data/photos2/20130101/4d0428c860df408bbe8c9419f68eb6f6/medium-187100f6a2f8465fb2ff0a11b4624e59-400.jpg";
     NSURL *url = [NSURL URLWithString:path];
     NSData *data = [NSData dataWithContentsOfURL:url];

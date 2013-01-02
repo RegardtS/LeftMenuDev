@@ -17,7 +17,7 @@
 
 - (void)awakeFromNib
 {
-  self.menuItems = [NSArray arrayWithObjects:@"First", @"Second", nil];
+  self.menuItems = [NSArray arrayWithObjects:@"9GAG", @"HaiVL", nil];
 }
 
 - (void)viewDidLoad
@@ -48,7 +48,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-  NSString *identifier = [NSString stringWithFormat:@"%@Top", [self.menuItems objectAtIndex:indexPath.row]];
+  NSString *identifier = [NSString stringWithFormat:@"%@", [self.menuItems objectAtIndex:indexPath.row]];
 
   UIViewController *newTopViewController = [self.storyboard instantiateViewControllerWithIdentifier:identifier];
   
