@@ -133,13 +133,13 @@
 			isa = PBXGroup;
 			children = (
 				2750E79514CDB959007727A0 /* FirstTopViewController.h */,
+				2750E79814CDB99A007727A0 /* SecondTopViewController.h */,
 				2750E79614CDB959007727A0 /* FirstTopViewController.m */,
+				2750E79914CDB99A007727A0 /* SecondTopViewController.m */,
 				27FC94DE14D0C14E0000B18C /* InitialSlidingViewController.h */,
 				27FC94DF14D0C14E0000B18C /* InitialSlidingViewController.m */,
 				2750E79214CDB93A007727A0 /* MenuViewController.h */,
 				2750E79314CDB93A007727A0 /* MenuViewController.m */,
-				2750E79814CDB99A007727A0 /* SecondTopViewController.h */,
-				2750E79914CDB99A007727A0 /* SecondTopViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
