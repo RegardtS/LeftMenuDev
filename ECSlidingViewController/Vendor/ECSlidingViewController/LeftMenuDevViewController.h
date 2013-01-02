@@ -1,6 +1,6 @@
 //
-//  ECSlidingViewController.h
-//  ECSlidingViewController
+//  LeftMenuDevViewController.h
+//  LeftMenuDevViewController
 //
 //  Created by Michael Enriquez on 1/23/12.
 //  Copyright (c) 2012 EdgeCase. All rights reserved.
@@ -10,28 +10,28 @@
 #import "UIImage+ImageWithUIView.h"
 
 /** Notification that gets posted when the underRight view will appear */
-extern NSString *const ECSlidingViewUnderRightWillAppear;
+extern NSString *const LeftMenuDevViewUnderRightWillAppear;
 
 /** Notification that gets posted when the underLeft view will appear */
-extern NSString *const ECSlidingViewUnderLeftWillAppear;
+extern NSString *const LeftMenuDevViewUnderLeftWillAppear;
 
 /** Notification that gets posted when the underLeft view will disappear */
-extern NSString *const ECSlidingViewUnderLeftWillDisappear;
+extern NSString *const LeftMenuDevViewUnderLeftWillDisappear;
 
 /** Notification that gets posted when the underRight view will disappear */
-extern NSString *const ECSlidingViewUnderRightWillDisappear;
+extern NSString *const LeftMenuDevViewUnderRightWillDisappear;
 
 /** Notification that gets posted when the top view is anchored to the left side of the screen */
-extern NSString *const ECSlidingViewTopDidAnchorLeft;
+extern NSString *const LeftMenuDevViewTopDidAnchorLeft;
 
 /** Notification that gets posted when the top view is anchored to the right side of the screen */
-extern NSString *const ECSlidingViewTopDidAnchorRight;
+extern NSString *const LeftMenuDevViewTopDidAnchorRight;
 
 /** Notification that gets posted when the top view will be centered on the screen */
-extern NSString *const ECSlidingViewTopWillReset;
+extern NSString *const LeftMenuDevViewTopWillReset;
 
 /** Notification that gets posted when the top view is centered on the screen */
-extern NSString *const ECSlidingViewTopDidReset;
+extern NSString *const LeftMenuDevViewTopDidReset;
 
 /** @constant ECViewWidthLayout width of under views */
 typedef enum {
@@ -61,8 +61,8 @@ typedef enum {
   ECPanning = 1 << 1
 } ECResetStrategy;
 
-/** ECSlidingViewController is a view controller container that presents its child view controllers in two layers. The top layer can be panned to reveal the layers below it. */
-@interface ECSlidingViewController : UIViewController{
+/** LeftMenuDevViewController is a view controller container that presents its child view controllers in two layers. The top layer can be panned to reveal the layers below it. */
+@interface LeftMenuDevViewController : UIViewController{
   CGPoint startTouchPosition;
   BOOL topViewHasFocus;
 }
@@ -212,6 +212,6 @@ typedef enum {
 
 /** UIViewController extension */
 @interface UIViewController(SlidingViewExtension)
-/** Convience method for getting access to the ECSlidingViewController instance */
-- (ECSlidingViewController *)slidingViewController;
+/** Convience method for getting access to the LeftMenuDevViewController instance */
+- (LeftMenuDevViewController *)slidingViewController;
 @end

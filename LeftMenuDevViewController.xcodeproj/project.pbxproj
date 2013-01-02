@@ -18,7 +18,7 @@
 		2750E79414CDB93A007727A0 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2750E79314CDB93A007727A0 /* MenuViewController.m */; };
 		2750E79714CDB959007727A0 /* FirstTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2750E79614CDB959007727A0 /* FirstTopViewController.m */; };
 		2750E79A14CDB99A007727A0 /* SecondTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2750E79914CDB99A007727A0 /* SecondTopViewController.m */; };
-		2750E7AE14CF1306007727A0 /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2750E7AB14CF1306007727A0 /* ECSlidingViewController.m */; };
+		2750E7AE14CF1306007727A0 /* LeftMenuDevViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2750E7AB14CF1306007727A0 /* LeftMenuDevViewController.m */; };
 		2750E7AF14CF1306007727A0 /* UIImage+ImageWithUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2750E7AD14CF1306007727A0 /* UIImage+ImageWithUIView.m */; };
 		27FC94E014D0C14E0000B18C /* InitialSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FC94DF14D0C14E0000B18C /* InitialSlidingViewController.m */; };
 		27FC94E314D105C60000B18C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FC94E214D105C60000B18C /* QuartzCore.framework */; };
@@ -26,14 +26,14 @@
 
 /* Begin PBXFileReference section */
 		27407EEB14D8787E0035FD7F /* iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPad.storyboard; sourceTree = "<group>"; };
-		2750E76C14CDB0DF007727A0 /* ECSlidingViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ECSlidingViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2750E76C14CDB0DF007727A0 /* LeftMenuDevViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeftMenuDevViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2750E77014CDB0DF007727A0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2750E77214CDB0DF007727A0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2750E77414CDB0DF007727A0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2750E77814CDB0DF007727A0 /* ECSlidingViewController-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ECSlidingViewController-Info.plist"; sourceTree = "<group>"; };
+		2750E77814CDB0DF007727A0 /* LeftMenuDevViewController-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LeftMenuDevViewController-Info.plist"; sourceTree = "<group>"; };
 		2750E77A14CDB0DF007727A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2750E77C14CDB0DF007727A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2750E77E14CDB0DF007727A0 /* ECSlidingViewController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ECSlidingViewController-Prefix.pch"; sourceTree = "<group>"; };
+		2750E77E14CDB0DF007727A0 /* LeftMenuDevViewController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LeftMenuDevViewController-Prefix.pch"; sourceTree = "<group>"; };
 		2750E77F14CDB0DF007727A0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2750E78014CDB0DF007727A0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2750E78714CDB114007727A0 /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
@@ -43,8 +43,8 @@
 		2750E79614CDB959007727A0 /* FirstTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstTopViewController.m; sourceTree = "<group>"; };
 		2750E79814CDB99A007727A0 /* SecondTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondTopViewController.h; sourceTree = "<group>"; };
 		2750E79914CDB99A007727A0 /* SecondTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondTopViewController.m; sourceTree = "<group>"; };
-		2750E7AA14CF1306007727A0 /* ECSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingViewController.h; sourceTree = "<group>"; };
-		2750E7AB14CF1306007727A0 /* ECSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSlidingViewController.m; sourceTree = "<group>"; };
+		2750E7AA14CF1306007727A0 /* LeftMenuDevViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuDevViewController.h; sourceTree = "<group>"; };
+		2750E7AB14CF1306007727A0 /* LeftMenuDevViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuDevViewController.m; sourceTree = "<group>"; };
 		2750E7AD14CF1306007727A0 /* UIImage+ImageWithUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageWithUIView.m"; sourceTree = "<group>"; };
 		279E158D14D737F60028A9EE /* UIImage+ImageWithUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageWithUIView.h"; sourceTree = "<group>"; };
 		27FC94DE14D0C14E0000B18C /* InitialSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialSlidingViewController.h; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 		2750E76114CDB0DF007727A0 = {
 			isa = PBXGroup;
 			children = (
-				2750E77614CDB0DF007727A0 /* ECSlidingViewController */,
+				2750E77614CDB0DF007727A0 /* LeftMenuDevViewController */,
 				2750E76F14CDB0DF007727A0 /* Frameworks */,
 				2750E76D14CDB0DF007727A0 /* Products */,
 			);
@@ -79,7 +79,7 @@
 		2750E76D14CDB0DF007727A0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2750E76C14CDB0DF007727A0 /* ECSlidingViewController.app */,
+				2750E76C14CDB0DF007727A0 /* LeftMenuDevViewController.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,7 +95,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2750E77614CDB0DF007727A0 /* ECSlidingViewController */ = {
+		2750E77614CDB0DF007727A0 /* LeftMenuDevViewController */ = {
 			isa = PBXGroup;
 			children = (
 				2750E78A14CDB1CF007727A0 /* Controllers */,
@@ -106,16 +106,17 @@
 				2750E78714CDB114007727A0 /* iPhone.storyboard */,
 				27407EEB14D8787E0035FD7F /* iPad.storyboard */,
 			);
+			name = LeftMenuDevViewController;
 			path = ECSlidingViewController;
 			sourceTree = "<group>";
 		};
 		2750E77714CDB0DF007727A0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2750E77814CDB0DF007727A0 /* ECSlidingViewController-Info.plist */,
+				2750E77814CDB0DF007727A0 /* LeftMenuDevViewController-Info.plist */,
 				2750E77914CDB0DF007727A0 /* InfoPlist.strings */,
 				2750E77C14CDB0DF007727A0 /* main.m */,
-				2750E77E14CDB0DF007727A0 /* ECSlidingViewController-Prefix.pch */,
+				2750E77E14CDB0DF007727A0 /* LeftMenuDevViewController-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -146,8 +147,8 @@
 		2750E7A914CF1306007727A0 /* ECSlidingViewController */ = {
 			isa = PBXGroup;
 			children = (
-				2750E7AA14CF1306007727A0 /* ECSlidingViewController.h */,
-				2750E7AB14CF1306007727A0 /* ECSlidingViewController.m */,
+				2750E7AA14CF1306007727A0 /* LeftMenuDevViewController.h */,
+				2750E7AB14CF1306007727A0 /* LeftMenuDevViewController.m */,
 				279E158D14D737F60028A9EE /* UIImage+ImageWithUIView.h */,
 				2750E7AD14CF1306007727A0 /* UIImage+ImageWithUIView.m */,
 			);
@@ -158,9 +159,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2750E76B14CDB0DF007727A0 /* ECSlidingViewController */ = {
+		2750E76B14CDB0DF007727A0 /* LeftMenuDevViewController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2750E78414CDB0DF007727A0 /* Build configuration list for PBXNativeTarget "ECSlidingViewController" */;
+			buildConfigurationList = 2750E78414CDB0DF007727A0 /* Build configuration list for PBXNativeTarget "LeftMenuDevViewController" */;
 			buildPhases = (
 				2750E76814CDB0DF007727A0 /* Sources */,
 				2750E76914CDB0DF007727A0 /* Frameworks */,
@@ -170,9 +171,9 @@
 			);
 			dependencies = (
 			);
-			name = ECSlidingViewController;
+			name = LeftMenuDevViewController;
 			productName = ECSlidingViewController;
-			productReference = 2750E76C14CDB0DF007727A0 /* ECSlidingViewController.app */;
+			productReference = 2750E76C14CDB0DF007727A0 /* LeftMenuDevViewController.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -183,7 +184,7 @@
 			attributes = {
 				LastUpgradeCheck = 0420;
 			};
-			buildConfigurationList = 2750E76614CDB0DF007727A0 /* Build configuration list for PBXProject "ECSlidingViewController" */;
+			buildConfigurationList = 2750E76614CDB0DF007727A0 /* Build configuration list for PBXProject "LeftMenuDevViewController" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -195,7 +196,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2750E76B14CDB0DF007727A0 /* ECSlidingViewController */,
+				2750E76B14CDB0DF007727A0 /* LeftMenuDevViewController */,
 			);
 		};
 /* End PBXProject section */
@@ -223,7 +224,7 @@
 				2750E79414CDB93A007727A0 /* MenuViewController.m in Sources */,
 				2750E79714CDB959007727A0 /* FirstTopViewController.m in Sources */,
 				2750E79A14CDB99A007727A0 /* SecondTopViewController.m in Sources */,
-				2750E7AE14CF1306007727A0 /* ECSlidingViewController.m in Sources */,
+				2750E7AE14CF1306007727A0 /* LeftMenuDevViewController.m in Sources */,
 				2750E7AF14CF1306007727A0 /* UIImage+ImageWithUIView.m in Sources */,
 				27FC94E014D0C14E0000B18C /* InitialSlidingViewController.m in Sources */,
 			);
@@ -292,10 +293,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ECSlidingViewController/ECSlidingViewController-Prefix.pch";
-				INFOPLIST_FILE = "ECSlidingViewController/ECSlidingViewController-Info.plist";
+				GCC_PREFIX_HEADER = "ECSlidingViewController/LeftMenuDevViewController-Prefix.pch";
+				INFOPLIST_FILE = "ECSlidingViewController/LeftMenuDevViewController-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LeftMenuDevViewController;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -305,10 +306,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ECSlidingViewController/ECSlidingViewController-Prefix.pch";
-				INFOPLIST_FILE = "ECSlidingViewController/ECSlidingViewController-Info.plist";
+				GCC_PREFIX_HEADER = "ECSlidingViewController/LeftMenuDevViewController-Prefix.pch";
+				INFOPLIST_FILE = "ECSlidingViewController/LeftMenuDevViewController-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LeftMenuDevViewController;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -317,7 +318,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2750E76614CDB0DF007727A0 /* Build configuration list for PBXProject "ECSlidingViewController" */ = {
+		2750E76614CDB0DF007727A0 /* Build configuration list for PBXProject "LeftMenuDevViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2750E78214CDB0DF007727A0 /* Debug */,
@@ -326,7 +327,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2750E78414CDB0DF007727A0 /* Build configuration list for PBXNativeTarget "ECSlidingViewController" */ = {
+		2750E78414CDB0DF007727A0 /* Build configuration list for PBXNativeTarget "LeftMenuDevViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2750E78514CDB0DF007727A0 /* Debug */,

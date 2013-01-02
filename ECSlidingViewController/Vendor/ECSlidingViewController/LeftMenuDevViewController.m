@@ -1,23 +1,23 @@
 //
-//  ECSlidingViewController.m
-//  ECSlidingViewController
+//  LeftMenuDevViewController.m
+//  LeftMenuDevViewController
 //
 //  Created by Michael Enriquez on 1/23/12.
 //  Copyright (c) 2012 EdgeCase. All rights reserved.
 //
 
-#import "ECSlidingViewController.h"
+#import "LeftMenuDevViewController.h"
 
-NSString *const ECSlidingViewUnderRightWillAppear    = @"ECSlidingViewUnderRightWillAppear";
-NSString *const ECSlidingViewUnderLeftWillAppear     = @"ECSlidingViewUnderLeftWillAppear";
-NSString *const ECSlidingViewUnderLeftWillDisappear  = @"ECSlidingViewUnderLeftWillDisappear";
-NSString *const ECSlidingViewUnderRightWillDisappear = @"ECSlidingViewUnderRightWillDisappear";
-NSString *const ECSlidingViewTopDidAnchorLeft        = @"ECSlidingViewTopDidAnchorLeft";
-NSString *const ECSlidingViewTopDidAnchorRight       = @"ECSlidingViewTopDidAnchorRight";
-NSString *const ECSlidingViewTopWillReset            = @"ECSlidingViewTopWillReset";
-NSString *const ECSlidingViewTopDidReset             = @"ECSlidingViewTopDidReset";
+NSString *const LeftMenuDevViewUnderRightWillAppear    = @"LeftMenuDevViewUnderRightWillAppear";
+NSString *const LeftMenuDevViewUnderLeftWillAppear     = @"LeftMenuDevViewUnderLeftWillAppear";
+NSString *const LeftMenuDevViewUnderLeftWillDisappear  = @"LeftMenuDevViewUnderLeftWillDisappear";
+NSString *const LeftMenuDevViewUnderRightWillDisappear = @"LeftMenuDevViewUnderRightWillDisappear";
+NSString *const LeftMenuDevViewTopDidAnchorLeft        = @"LeftMenuDevViewTopDidAnchorLeft";
+NSString *const LeftMenuDevViewTopDidAnchorRight       = @"LeftMenuDevViewTopDidAnchorRight";
+NSString *const LeftMenuDevViewTopWillReset            = @"LeftMenuDevViewTopWillReset";
+NSString *const LeftMenuDevViewTopDidReset             = @"LeftMenuDevViewTopDidReset";
 
-@interface ECSlidingViewController()
+@interface LeftMenuDevViewController()
 
 @property (nonatomic, strong) UIView *topViewSnapshot;
 @property (nonatomic, unsafe_unretained) CGFloat initialTouchPositionX;
@@ -56,19 +56,19 @@ NSString *const ECSlidingViewTopDidReset             = @"ECSlidingViewTopDidRese
 
 @implementation UIViewController(SlidingViewExtension)
 
-- (ECSlidingViewController *)slidingViewController
+- (LeftMenuDevViewController *)slidingViewController
 {
   UIViewController *viewController = self.parentViewController;
-  while (!(viewController == nil || [viewController isKindOfClass:[ECSlidingViewController class]])) {
+  while (!(viewController == nil || [viewController isKindOfClass:[LeftMenuDevViewController class]])) {
     viewController = viewController.parentViewController;
   }
   
-  return (ECSlidingViewController *)viewController;
+  return (LeftMenuDevViewController *)viewController;
 }
 
 @end
 
-@implementation ECSlidingViewController
+@implementation LeftMenuDevViewController
 
 // public properties
 @synthesize underLeftViewController  = _underLeftViewController;
@@ -326,7 +326,7 @@ NSString *const ECSlidingViewTopDidReset             = @"ECSlidingViewTopDidRese
     _topViewIsOffScreen = NO;
     [self addTopViewSnapshot];
     dispatch_async(dispatch_get_main_queue(), ^{
-      NSString *key = (side == ECLeft) ? ECSlidingViewTopDidAnchorLeft : ECSlidingViewTopDidAnchorRight;
+      NSString *key = (side == ECLeft) ? LeftMenuDevViewTopDidAnchorLeft : LeftMenuDevViewTopDidAnchorRight;
       [[NSNotificationCenter defaultCenter] postNotificationName:key object:self userInfo:nil];
     });
   }];
@@ -361,7 +361,7 @@ NSString *const ECSlidingViewTopDidReset             = @"ECSlidingViewTopDidRese
     _topViewIsOffScreen = YES;
     [self addTopViewSnapshot];
     dispatch_async(dispatch_get_main_queue(), ^{
-      NSString *key = (side == ECLeft) ? ECSlidingViewTopDidAnchorLeft : ECSlidingViewTopDidAnchorRight;
+      NSString *key = (side == ECLeft) ? LeftMenuDevViewTopDidAnchorLeft : LeftMenuDevViewTopDidAnchorRight;
       [[NSNotificationCenter defaultCenter] postNotificationName:key object:self userInfo:nil];
     });
   }];
@@ -370,7 +370,7 @@ NSString *const ECSlidingViewTopDidReset             = @"ECSlidingViewTopDidRese
 - (void)resetTopView
 {
   dispatch_async(dispatch_get_main_queue(), ^{
-    [[NSNotificationCenter defaultCenter] postNotificationName:ECSlidingViewTopWillReset object:self userInfo:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:LeftMenuDevViewTopWillReset object:self userInfo:nil];
   });
   [self resetTopViewWithAnimations:nil onComplete:nil];
 }
@@ -432,13 +432,13 @@ NSString *const ECSlidingViewTopDidReset             = @"ECSlidingViewTopDidRese
   
 	if (center.x >= self.resettedCenter && newHorizontalCenter == self.resettedCenter) {
 		dispatch_async(dispatch_get_main_queue(), ^{
-			[[NSNotificationCenter defaultCenter] postNotificationName:ECSlidingViewUnderLeftWillDisappear object:self userInfo:nil];
+			[[NSNotificationCenter defaultCenter] postNotificationName:LeftMenuDevViewUnderLeftWillDisappear object:self userInfo:nil];
 		});
 	}
 	
 	if (center.x <= self.resettedCenter && newHorizontalCenter == self.resettedCenter) {
 		dispatch_async(dispatch_get_main_queue(), ^{
-			[[NSNotificationCenter defaultCenter] postNotificationName:ECSlidingViewUnderRightWillDisappear object:self userInfo:nil];
+			[[NSNotificationCenter defaultCenter] postNotificationName:LeftMenuDevViewUnderRightWillDisappear object:self userInfo:nil];
 		});
 	}
 	
@@ -528,7 +528,7 @@ NSString *const ECSlidingViewTopDidReset             = @"ECSlidingViewTopDidRese
 - (void)underLeftWillAppear
 {
   dispatch_async(dispatch_get_main_queue(), ^{
-    [[NSNotificationCenter defaultCenter] postNotificationName:ECSlidingViewUnderLeftWillAppear object:self userInfo:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:LeftMenuDevViewUnderLeftWillAppear object:self userInfo:nil];
   });
   self.underRightView.hidden = YES;
   [self.underLeftViewController viewWillAppear:NO];
@@ -541,7 +541,7 @@ NSString *const ECSlidingViewTopDidReset             = @"ECSlidingViewTopDidRese
 - (void)underRightWillAppear
 {
   dispatch_async(dispatch_get_main_queue(), ^{
-    [[NSNotificationCenter defaultCenter] postNotificationName:ECSlidingViewUnderRightWillAppear object:self userInfo:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:LeftMenuDevViewUnderRightWillAppear object:self userInfo:nil];
   });
   self.underLeftView.hidden = YES;
   [self.underRightViewController viewWillAppear:NO];
@@ -554,7 +554,7 @@ NSString *const ECSlidingViewTopDidReset             = @"ECSlidingViewTopDidRese
 - (void)topDidReset
 {
   dispatch_async(dispatch_get_main_queue(), ^{
-    [[NSNotificationCenter defaultCenter] postNotificationName:ECSlidingViewTopDidReset object:self userInfo:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:LeftMenuDevViewTopDidReset object:self userInfo:nil];
   });
   [self.topView removeGestureRecognizer:self.resetTapGesture];
   [self removeTopViewSnapshot];
