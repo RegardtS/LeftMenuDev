@@ -10,5 +10,4 @@
 
 @interface InitialSlidingViewController : LeftMenuDevViewController
 //Stupid comment gone Olala
-// And what sha1 ???
 @end

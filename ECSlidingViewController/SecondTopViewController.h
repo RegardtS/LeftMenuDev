@@ -11,5 +11,11 @@
 #import "MenuViewController.h"
 
 @interface SecondTopViewController : UIViewController
+
+//@property (nonatomic, strong) IBOutlet UIImage *img;
+@property(weak,nonatomic) IBOutlet UIImageView *imageView;
+@property(weak,nonatomic) IBOutlet UIScrollView *scrollView;
+
 - (IBAction)revealMenu:(id)sender;
+
 @end

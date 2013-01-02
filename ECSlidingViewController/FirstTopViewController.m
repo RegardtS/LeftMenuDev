@@ -23,6 +23,10 @@
   if (![self.slidingViewController.underLeftViewController isKindOfClass:[MenuViewController class]]) {
     self.slidingViewController.underLeftViewController  = [self.storyboard instantiateViewControllerWithIdentifier:@"Menu"];
   }
+  self.slidingViewController.underRightViewController = nil;
+  self.slidingViewController.anchorLeftPeekAmount     = 0;
+  self.slidingViewController.anchorLeftRevealAmount   = 0;
+  self.slidingViewController.anchorRightRevealAmount =200.0f;
   
   [self.view addGestureRecognizer:self.slidingViewController.panGesture];
 }
