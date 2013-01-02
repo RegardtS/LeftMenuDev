@@ -9,5 +9,6 @@
 #import "LeftMenuDevViewController.h"
 
 @interface InitialSlidingViewController : LeftMenuDevViewController
-//Let's start with a stupid comment
+//Stupid comment gone Olala
+// And what sha1 ???
 @end
