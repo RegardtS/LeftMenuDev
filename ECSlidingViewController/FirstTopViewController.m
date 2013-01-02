@@ -24,21 +24,12 @@
     self.slidingViewController.underLeftViewController  = [self.storyboard instantiateViewControllerWithIdentifier:@"Menu"];
   }
   
-  if (![self.slidingViewController.underRightViewController isKindOfClass:[UnderRightViewController class]]) {
-    self.slidingViewController.underRightViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"UnderRight"];
-  }
-  
   [self.view addGestureRecognizer:self.slidingViewController.panGesture];
 }
 
 - (IBAction)revealMenu:(id)sender
 {
   [self.slidingViewController anchorTopViewTo:ECRight];
-}
-
-- (IBAction)revealUnderRight:(id)sender
-{
-  [self.slidingViewController anchorTopViewTo:ECLeft];
 }
 
 @end

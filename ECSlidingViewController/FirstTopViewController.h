@@ -10,11 +10,9 @@
 #import <QuartzCore/QuartzCore.h>
 #import "ECSlidingViewController.h"
 #import "MenuViewController.h"
-#import "UnderRightViewController.h"
 
 @interface FirstTopViewController : UIViewController
 
 - (IBAction)revealMenu:(id)sender;
-- (IBAction)revealUnderRight:(id)sender;
 
 @end
